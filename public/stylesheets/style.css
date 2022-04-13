@@ -1,0 +1,133 @@
+
+html, body {
+ position: absolute;
+ width: 100%;
+ margin: 0; padding: 0;
+ left: 0;
+ font-family: "Open Sans", sans-serif;
+ font-size: 18px;
+ color: #000000;
+}
+
+h1 {
+ font-weight: bold;
+ font-size: 2.1em;
+}
+
+h2 {
+ font-weight: bold;
+ font-size: 2em;
+}
+
+/*
+*
+* NAVIGATION
+*
+*/
+
+nav {
+ padding: 5%;
+ background-color: #e6e6e5;
+}
+
+#mainlink a {
+ font-family: "Verdana", sans-serif;
+ text-align: center;
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 2em;
+ color: #000000;
+}
+
+#mainlink a:hover {
+ text-decoration: underline;
+}
+
+#mainlink a:active {
+ color: #000000;
+}
+
+#submenu {
+ list-style-type: none;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.subLink {
+ color: #000000;
+ border-style: solid;
+ text-decoration: none;
+ padding: 10%;
+ border-radius: 5px;
+ background-color: #c6d8eb;
+ font-weight: bold;
+ border-width: 1px;
+}
+
+.subLink:hover {
+ color: white;
+ background-color: #000000;
+ text-decoration: underline;
+ font-weight: bold;
+}
+
+/*
+* INTRO PAGE
+*
+*/
+
+#intro {
+ padding: 5%;
+}
+
+
+/*
+* FORM PAGE
+*
+*/
+
+#weightinputformContainer {
+ padding: 5%;
+}
+
+#frmWeight {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ row-gap: 10px;
+ column-gap: 10px;
+}
+
+.weightFormButton {
+ padding: 2%;
+}
+
+/*
+*
+* Weight results page 
+*
+*/
+
+#weightResults {
+ padding: 5%;
+ text-align: center;
+}
+
+.singleWeight {
+ padding: 2%;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ border-style: solid;
+ border-width: 1px;
+ margin: 2%;
+}
+
+.singleWeight p {
+ font-weight: bold;
+ text-align: left;
+}
+
+.singleWeight p > span {
+ font-weight: normal;
+ margin-left: 10px;
+}
+
