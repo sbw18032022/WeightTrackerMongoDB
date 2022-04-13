@@ -1,0 +1,47 @@
+include mainnav
+
+block content
+
+ div(id="weightinputformContainer")
+  h2 This is the Weight input form.
+  
+  form(
+   name="frmWeight"
+   id="frmWeight"
+   action="./addweight"
+   method="POST"
+  )
+  
+   div
+    label(
+     for="txtStones"
+    ) Stones: 
+    input(
+     type="number"
+     name="txtStones"
+     id="txtStones"
+     minlength:1
+    )
+   
+   div
+    label(
+     for="txtPounds"
+    ) Pounds: 
+    input(
+     type="number"
+     id="txtPounds"
+     name="txtPounds"
+     minlength:1
+    )
+   
+   
+   input(
+    class="weightFormButton"
+    type="Submit"
+    value="SUBMIT"
+   )
+   input(
+    class="weightFormButton"
+    type="reset"
+    value="RESET"
+   )

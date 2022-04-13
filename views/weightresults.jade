@@ -1,0 +1,21 @@
+include mainnav
+
+block content
+
+ div(id="weightResults")
+  h2 Weight Results 
+  each w in data
+   div(class="singleWeight")
+    p Stone:
+     span #{w.trackerStone}
+    p Pounds:
+      span #{w.trackerPounds}
+    p Date:
+     span #{w.trackerDate}
+    p ID:
+     span #{w._id}
+    div(class="weightControlContainers")
+     a(href="./editform/#{w._id}") Edit 
+     a(href="./deletesingle/#{w._id}") Delete 
+     
+     
